@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+       <bean id ="student" class = "com.selenium.di.Student">
+        <property name="studentName" value="Jegan"></property>
+        <property name="id" value="1"></property>
+         <constructor-arg name="salary" value="1500000"></constructor-arg>
+         <constructor-arg name="dept" value="cse"></constructor-arg>
+        
+          </bean>
+          
+         <bean id ="vamos" class = "com.selenium.di.Student">
+      
+        <constructor-arg  name="id" value="1"></constructor-arg>
+        </bean>
+        
+        <bean id ="hola" class = "com.selenium.di.Student">
+        <property name="studentName" value="hola"></property>
+        <property name="id" value="2"></property>
+         <constructor-arg name="salary" value="100000"></constructor-arg>
+         <constructor-arg name="dept" value="mech"></constructor-arg>
+        
+        </bean>
+        
+       
+        
+     
+        
+        </beans>
+
